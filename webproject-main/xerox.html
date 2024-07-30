@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url('bac.jpeg'); background-size: cover;">
+    <form>
+        <input type="file" name="file"><br><br><br><br>
+        <p>Enter number of xerox required</p>
+        <input type="number" name="number">
+        <button type="button" onclick="sendWhatsApp();">Send via WhatsApp</button><br>
+    </form>
+    <script>
+        function sendWhatsApp() {
+            var phoneNumber = "+9026307404";
+            var fileInput = document.querySelector('input[name="file"]');
+            var numberInput = document.querySelector('input[name="number"]');
+            var file = fileInput.files[0]; // Get the selected file
+            var number = numberInput.value;
+            var message = "file: " + file.name + "%0A" + "number: " + number; // Use %0A for line breaks in WhatsApp message
+            var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

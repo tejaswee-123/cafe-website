@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .form {
+            border-color: black;
+            text-align: center;
+            background-color: rgb(141, 136, 136);
+            padding-top: 5%;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        .inputs {
+            width: 80%;
+            height: 20%;
+            margin-bottom: 7%;
+        }
+        h3 {
+            font-size: 40px;
+        }
+        .head {
+            background-color: rgb(141, 136, 136);
+        }
+        hr {
+            height: 3px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body style="background-image: url('bac.jpeg'); background-size: cover;">
+    <div class="head"><h3 style="text-align: center;">Please Provide Your Details Here</h3></div><hr>
+    <form>
+        <div class="form">
+            <input type="text" name="name" placeholder="Name" class="inputs" required><br>
+            <input type="email" name="email" placeholder="Email Id" class="inputs" required><br>
+            <input type="number" name="number" placeholder="Contact number" class="inputs" required><br>
+            <input type="text" name="text" placeholder="Enter your request here" class="inputs" required><br>
+            <button type="button" onclick="sendWhatsApp();">Send via WhatsApp</button><br>
+        </div>
+    </form>
+    <script>
+        function sendWhatsApp() {
+            var phoneNumber = "+9026307404";
+            var name = document.querySelector('input[name="name"]').value;
+            var email = document.querySelector('input[name="email"]').value;
+            var number = document.querySelector('input[name="number"]').value;
+            var text = document.querySelector('input[name="text"]').value;
+    
+            var message = " Name: " + name + " " +
+                          " Email: " + email + " " +
+                          " Number: " + number + " " +
+                          " Text: " + text + " ";
+    
+            var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+            window.open(url, '_blank').focus();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       body {
+    font-family: "raleway", sans-serif;
+    /* background: linear-gradient(#a6eade,#acb6e5); */
+    
+    display: block;
+    width: 100;
+    color: black;
+    margin: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+padding-bottom: 5%;  
+
+}
+
+
+h1 {
+    margin-top: 0;
+    font-family: 'Unbounded', sans-serif;
+    font-size:500%;
+    text-shadow: 5px 5px 5px #504d4d;
+    text-align: center;
+    margin-top: 3vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: 0.6em 0;
+    display: inline-block;
+}
+
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+    color: black;
+}
+
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: linear-gradient(rgb(36, 35, 35),rgb(115, 115, 115));
+}
+
+.prod {
+    float: left;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.prod:hover {
+    border-radius: 10px;
+}
+
+.cl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.r {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cl2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.img {
+    display: flex;
+    /* margin-bottom: 20px; */
+    margin-left: 40%;
+    height: 30%;
+    width: 50%;
+    /* border-radius: 10px; */
+}
+
+.img3 {
+    margin-left: 20px;
+}
+
+.info {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bar {
+    margin: 10px 0;
+}
+
+.sel {
+    margin-bottom: 20px;
+}
+
+.btc {
+    text-align: center;
+    margin-bottom: 10vh;
+    
+}
+
+.bt {
+    height: 10vw;
+    width: 50vw;
+    border-radius: 1.5vw;
+    font-size: 4vw;
+    background: linear-gradient(rgb(36, 35, 35),rgb(115, 115, 115));
+}
+
+.bt:hover {
+    transform: scale(1.06);
+}
+/* .e{
+    display: flex;
+} */
+.foot{
+    display: flex;
+    color: black;
+    margin-bottom: 10;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 5%;
+    background-color:white;
+    border-radius: 5%;
+}
+/* .what{
+    border-radius: 1%;
+} */
+@media screen and (max-width: 768px) {
+    .site-navigation li {
+        margin: 0.6em 0.5em;
+    }
+
+    .site-header {
+        flex-direction: column;
+    }
+h1{
+    font-size:200%;
+        text-shadow: 3px 3px 3px #504d4d; text-align: center; margin-top: 3vw;
+}
+    .cl, .cl2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .img, .img3 {
+        margin-left: 0;
+    }
+    .img{
+        padding-left: 40%;
+    } 
+    .info {
+        text-align: left;
+    }
+    
+    .btc {
+        margin-bottom: 5vh;
+    }
+    
+    .bt {
+        width: 30%;
+    }
+}
+/* .what{
+    text-align: center;
+    border-radius: 1%;
+    height: 40%;
+    width: 40%;
+} */
+
+</style>
+<body style="background-image: url('bac.jpeg'); background-size: cover;">
+<div class="info">
+    <div class="e">
+    <div><h1>Ashutosh Cyber Cafe</h1></div>
+ <!-- <div class="b">
+  <div class="bar"><img src="email1.jpg" height="30px" width="30px"></div>
+    <div><p>sonisudheer0@gmail.com</p></div>
+  </div><br>
+  <div class="b">
+  <div class="bar"><img src="phone'.png" height="30px" width="30px"></div>
+    <div><p>8081814542</p></div>
+  
+  </div><br>
+  <div class="b">
+  <div class="bar"><img src="time.png" height="30px" width="30px"></div>
+    <div><p>10:00 AM To 7:00 PM</p></div>
+    
+  </div></div><br> -->
+  <!-- <div class="info2">
+    <p>sonisudheer0@gmail.com</p>
+    <p>8081814542</p>
+    <p>10:00 AM To 7:00 PM</p>
+  </div> -->
+</div>
+<!-- <div><h1 style="font-family: Playfair Display, serif; font-size: 70px;">Ashutosh Cyber Cafe</h1></div> -->
+    <header class="site-header">
+        <div class="site-identity">
+
+        </div> 
+        <nav class="site-navigation">
+          
+         <div><ul class="nav">
+            <li><a href="about.html" >About</a></li> 
+            <li><a href="service.html">services</a></li> 
+            <li><a href="contact.html" >Contact</a></li> 
+          </ul></div> 
+        </nav>
+      </header>
+      <div >
+        <!-- <img class="mySlides" src="typing.jpg" height="400px" width="1450px"> -->
+        <!-- <img class="mySlides" src="p.jpg" height="5%" width="100%"> -->
+        <img class="mySlides" src="YE.gif" height="20%" width="100%">
+        <!-- <img class="mySlides" src="bl.jpg" height="5%" width="100%"> -->
+      
+      </div>
+      
+      <!-- <script>
+      var myIndex = 0;
+      auto();
+      
+      function auto() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(auto, 2000); 
+      } -->
+      <!-- </script><br><br><br><br><br> -->
+      <br><br>
+      <marquee behavior="scroll" direction="left" style="color:black; font-size: 100%;">For any query please contact: 8081814542</marquee>
+      <p style="text-align: center;">
+        "Visit our cyber cafe for high-speed internet, printing, scanning. Your digital sanctuary for work and play!"</p><br><br>
+        <p style="text-align: center; font-size: 80%;">ऑनलाइन फार्म आवेदन केन्द्र (साइवर कैफे) आप घर से काफी दूर है या आपको आने जाने में परेशानी हो रही है या कोई योग्य साइवर कैफे वाला आपके आस पास नहीं है या अगर आप अपनी जिंदगी में बहुत व्यस्त हैं तो आप निश्चित हो जाइए।</p><br>
+        <div class="im">
+          <div class="img"><img src="clock.jpg" height="60%" width="40%" style="border-radius:50%; border: 3px solid black; border-style:groove;"></div>
+          <div class="img3"><p style="text-align: center; font-size: 80%;">समय बचायें और घर पर रहें<br>
+            अब आप घर बैठे अपना महत्वपूर्ण समय बचाकर, भीड़-भाड़ से मुक्त हो कर, किसी भी प्रकार की सरकारी या प्राइवेट जॉब आवेदन की सुविधा के लिए हम से सम्पर्क करें। आप बेफिक्र हो कर 100 प्रतिशत यकीन के साथ हम से संपर्क कर सकते हैं।</p></div>
+        </div><br><br><br><br><br><br></div>
+        <!-- <p style="text-align: center; font-size: 40px;">Services We Offer</p> -->
+        <!-- <div style="text-align: center;"> 
+          <select class="sel"  onchange="location = this.value;"><br>
+            <option value="select your choice">....SELECT YOUR CHOICE....</option><br>
+            <option value="application.html">ONLINE FORM FILLING</option><br>
+            <option value="DRIVING LICENSE"><a href="application.html">DRIVING LICENSE</a></option>
+            <option value="APPLYING FOR PAN CARD"><a href="application.html">APPLYING FOR PAN CARD</a></option>
+            <option value="APPLY FOR HANDICAP UDID CARD"><a href="application.html">APPLY FOR HANDICAP UDID CARD</a></option>
+            <option value="PROVIDE THE BOOKS PDF"><a href="application.html">PROVIDE THE BOOKS PDF</a></option>
+            <option value="APPLYING FOR INCOME CERTIFICATE"><a href="application.html">APPLYING FOR INCOME CERTIFICATE</a></option>
+            <option value="APPLYING FOR CASTE CERTIFICATE"><a href="application.html">APPLYING FOR CASTE CERTIFICATE</a></option>
+            <option value="APPLYING FOR DOMICILE CERTIFICATE"><a href="application.html">APPLYING FOR DOMICILE CERTIFICATE</a></option>
+            <option value="XEROX / SCANNING AND PRINTOUTS"><a href="application.html">XEROX / SCANNING AND PRINTOUTS</a></option>
+            <option value="OTHER ONLINE SERVICES"><a href="application.html">OTHER ONLINE SERVICES</a></option>
+          </select>
+        </div> -->
+        <div class="btc"><button class="bt" type="button" name="button"><a href="service.html" style="font-size: 2vw;">GO TO OUR SERVICES</a></button></div>
+        
+        <!-- <footer class="foot"> -->
+            <footer>
+                <div style="background: linear-gradient(rgb(75, 74, 74),rgb(115, 115, 115)); padding-top: 2%; padding-bottom: 1%;margin-left: 20%; margin-right: 20%;" >
+                    <a class="what" href="https://wa.me/9026307404/? "><img src="what.png" style="height: 8%; width: 8%; margin-left:30%; "></a>
+                    <a class="what" href="mailto:sonisudheer0@gmail.com?"><img src="email1.jpg" style="height: 8%; width: 8%; margin-left:5%; "></a>
+                    <a class="linked in" href=""><img src="watch.jpg" style="height: 8%; width: 8%; margin-left:5%;"></a>
+                    
+                </div>
+            </footer>
+        </div>
+       
+            
+            <!-- <div class="bar"><img src="email1.jpg" height="30px" width="30px"></div>
+              <div><p>sonisudheer0@gmail.com</p></div>
+            </div><br>
+            <div class="b">
+                <div class="what"><a href="https://wa.me/8081814542/?text=Hii I want to use online services"><img src="what.png" height="15%" width="10%">Whatsapp us</a></div></div>
+            <div class="b">
+            <div class="bar"><img src="time.png" height="30px" width="30px"></div>
+              <div><p>10:00 AM To 7:00 PM</p></div> -->
+              
+         
+        <!-- </footer> -->
+        </body>
+</html>
